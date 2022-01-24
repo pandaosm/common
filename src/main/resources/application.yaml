@@ -1,0 +1,55 @@
+##spring:
+##  application:
+##    name: gateway   
+  #cloud:     
+    #gateway:       
+      #routes:       
+      #- id: order-route        
+        #uri: http://localhost:9091/
+        #predicates:                                                              
+        #- Path=/orders
+##  jpa:
+    #database-platform: org.hibernate.dialect.Oracle10gDialect
+##    database-platform: org.hibernate.dialect.Oracle10gDialect
+##    open-in-view: true
+##    show-sql: true
+##    hibernate:
+    #  ddl-auto: validate
+##        ddl-auto: update
+        #ddl-auto: none
+
+    #url: jdbc:oracle:thin:@10.180.71.44:1521/EXP
+    #username: boabf
+    #password: boabf
+    ##url: jdbc:oracle:thin:@LOCALHOST:1521/XE
+    ##username: GR_SMI
+    ##password: GR_SMI
+    ##driver-class-name: oracle.jdbc.OracleDriver
+   ##datasource:
+
+#logging:
+#  level:
+#    org.hibernate.SQL: DEBUG
+#    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:mydb
+    username: sa
+    password: 
+    driverClassName: org.h2.Driver
+  jpa:
+    spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
+
+
+management:
+        endpoints:   
+                   web:
+                       exposure: 
+                                include: "*"
+
+
+server:
+  port: 8085
+  

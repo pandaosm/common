@@ -1,0 +1,1742 @@
+2021-11-23 11:29:12,230|INFO |[restartedMain]||Starting MultichannelV2Application using Java 16.0.2 on DESKTOP-U6F59BC with PID 20488 (C:\java\BOA\common-geeric-V4\target\classes started by osm in C:\java\BOA\common-geeric-V4)
+2021-11-23 11:29:12,294|INFO |[restartedMain]||No active profile set, falling back to default profiles: default
+2021-11-23 11:29:12,441|INFO |[restartedMain]||The Class-Path manifest attribute in C:\Users\osm\.m2\repository\com\oracle\database\jdbc\ojdbc8\21.1.0.0\ojdbc8-21.1.0.0.jar referenced one or more files that do not exist: file:/C:/Users/osm/.m2/repository/com/oracle/database/jdbc/ojdbc8/21.1.0.0/oraclepki.jar
+2021-11-23 11:29:12,444|INFO |[restartedMain]||Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-11-23 11:29:12,445|INFO |[restartedMain]||For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-11-23 11:29:15,575|INFO |[restartedMain]||Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-23 11:29:15,579|INFO |[restartedMain]||Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2021-11-23 11:29:15,660|INFO |[restartedMain]||Spring Data JDBC - Could not safely identify store assignment for repository candidate interface bank.of.africa.multichannelV2.dao.IClientTemp. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2021-11-23 11:29:15,663|INFO |[restartedMain]||Spring Data JDBC - Could not safely identify store assignment for repository candidate interface bank.of.africa.multichannelV2.dao.ICptViewTemp. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2021-11-23 11:29:15,665|INFO |[restartedMain]||Finished Spring Data repository scanning in 75 ms. Found 0 JDBC repository interfaces.
+2021-11-23 11:29:15,685|INFO |[restartedMain]||Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-23 11:29:15,688|INFO |[restartedMain]||Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-23 11:29:15,774|INFO |[restartedMain]||Finished Spring Data repository scanning in 73 ms. Found 2 JPA repository interfaces.
+2021-11-23 11:29:17,929|INFO |[restartedMain]||Tomcat initialized with port(s): 8085 (http)
+2021-11-23 11:29:17,958|INFO |[restartedMain]||Initializing ProtocolHandler ["http-nio-8085"]
+2021-11-23 11:29:17,959|INFO |[restartedMain]||Starting service [Tomcat]
+2021-11-23 11:29:17,959|INFO |[restartedMain]||Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-11-23 11:29:18,181|INFO |[restartedMain]||Initializing Spring embedded WebApplicationContext
+2021-11-23 11:29:18,182|INFO |[restartedMain]||Root WebApplicationContext: initialization completed in 5736 ms
+2021-11-23 11:29:19,586|INFO |[restartedMain]||HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-23 11:29:19,745|INFO |[restartedMain]||HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-11-23 11:29:20,463|INFO |[restartedMain]||HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-11-23 11:29:20,968|INFO |[restartedMain]||HikariPool-1 - Starting...
+2021-11-23 11:29:22,875|INFO |[restartedMain]||HikariPool-1 - Start completed.
+2021-11-23 11:29:22,944|INFO |[restartedMain]||HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2021-11-23 11:30:49,409|INFO |[restartedMain]||HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-23 11:30:49,453|INFO |[restartedMain]||Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-23 11:30:53,213|WARN |[restartedMain]||Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'restCurrenciesAsynchron' method 
+bank.of.africa.multichannelV2.controller.RestCurrenciesAsynchron#completableCurrency()
+to {GET [/Asyn/getCurrinciesRemote]}: There is already 'restCurrenciesAsynchron' bean method
+bank.of.africa.multichannelV2.controller.RestCurrenciesAsynchron#completableCountry() mapped.
+2021-11-23 11:30:53,223|INFO |[restartedMain]||Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-23 11:30:53,229|INFO |[restartedMain]||HikariPool-1 - Shutdown initiated...
+2021-11-23 11:30:54,259|INFO |[restartedMain]||HikariPool-1 - Shutdown completed.
+2021-11-23 11:30:54,266|INFO |[restartedMain]||Stopping service [Tomcat]
+2021-11-23 11:30:54,374|INFO |[restartedMain]||
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-11-23 11:30:54,456|ERROR|[restartedMain]||Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'restCurrenciesAsynchron' method 
+bank.of.africa.multichannelV2.controller.RestCurrenciesAsynchron#completableCurrency()
+to {GET [/Asyn/getCurrinciesRemote]}: There is already 'restCurrenciesAsynchron' bean method
+bank.of.africa.multichannelV2.controller.RestCurrenciesAsynchron#completableCountry() mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at bank.of.africa.multichannelV2.MultichannelV2Application.main(MultichannelV2Application.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'restCurrenciesAsynchron' method 
+bank.of.africa.multichannelV2.controller.RestCurrenciesAsynchron#completableCurrency()
+to {GET [/Asyn/getCurrinciesRemote]}: There is already 'restCurrenciesAsynchron' bean method
+bank.of.africa.multichannelV2.controller.RestCurrenciesAsynchron#completableCountry() mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:665)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:631)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:328)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:395)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:76)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$2(AbstractHandlerMethodMapping.java:298)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:723)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:296)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:265)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:224)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:212)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:206)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	... 21 common frames omitted
+2021-11-23 11:58:32,026|INFO |[restartedMain]||Starting MultichannelV2Application using Java 16.0.2 on DESKTOP-U6F59BC with PID 19264 (C:\java\BOA\common-geeric-V4\target\classes started by osm in C:\java\BOA\common-geeric-V4)
+2021-11-23 11:58:32,033|INFO |[restartedMain]||No active profile set, falling back to default profiles: default
+2021-11-23 11:58:32,251|INFO |[restartedMain]||The Class-Path manifest attribute in C:\Users\osm\.m2\repository\com\oracle\database\jdbc\ojdbc8\21.1.0.0\ojdbc8-21.1.0.0.jar referenced one or more files that do not exist: file:/C:/Users/osm/.m2/repository/com/oracle/database/jdbc/ojdbc8/21.1.0.0/oraclepki.jar
+2021-11-23 11:58:32,252|INFO |[restartedMain]||Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-11-23 11:58:32,253|INFO |[restartedMain]||For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-11-23 11:58:35,531|INFO |[restartedMain]||Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-23 11:58:35,543|INFO |[restartedMain]||Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2021-11-23 11:58:35,646|INFO |[restartedMain]||Spring Data JDBC - Could not safely identify store assignment for repository candidate interface bank.of.africa.multichannelV2.dao.IClientTemp. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2021-11-23 11:58:35,651|INFO |[restartedMain]||Spring Data JDBC - Could not safely identify store assignment for repository candidate interface bank.of.africa.multichannelV2.dao.ICptViewTemp. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2021-11-23 11:58:35,653|INFO |[restartedMain]||Finished Spring Data repository scanning in 96 ms. Found 0 JDBC repository interfaces.
+2021-11-23 11:58:35,710|INFO |[restartedMain]||Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-23 11:58:35,712|INFO |[restartedMain]||Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-23 11:58:35,855|INFO |[restartedMain]||Finished Spring Data repository scanning in 88 ms. Found 2 JPA repository interfaces.
+2021-11-23 11:58:39,850|INFO |[restartedMain]||Tomcat initialized with port(s): 8085 (http)
+2021-11-23 11:58:39,893|INFO |[restartedMain]||Initializing ProtocolHandler ["http-nio-8085"]
+2021-11-23 11:58:39,913|INFO |[restartedMain]||Starting service [Tomcat]
+2021-11-23 11:58:39,917|INFO |[restartedMain]||Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-11-23 11:58:40,293|INFO |[restartedMain]||Initializing Spring embedded WebApplicationContext
+2021-11-23 11:58:40,294|INFO |[restartedMain]||Root WebApplicationContext: initialization completed in 8039 ms
+2021-11-23 11:58:43,847|INFO |[restartedMain]||HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-23 11:58:44,083|INFO |[restartedMain]||HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-11-23 11:58:44,591|INFO |[restartedMain]||HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-11-23 11:58:45,083|INFO |[restartedMain]||HikariPool-1 - Starting...
+2021-11-23 11:58:47,168|INFO |[restartedMain]||HikariPool-1 - Start completed.
+2021-11-23 11:58:50,358|INFO |[restartedMain]||HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2021-11-23 12:00:33,847|INFO |[restartedMain]||HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-23 12:00:33,871|INFO |[restartedMain]||Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-23 12:00:36,420|WARN |[restartedMain]||Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'restCurrenciesAsynchron' method 
+bank.of.africa.multichannelV2.controller.RestCurrenciesAsynchron#completableCountry()
+to {GET [/Asyn/getCurrinciesRemote]}: There is already 'restCurrenciesAsynchron' bean method
+bank.of.africa.multichannelV2.controller.RestCurrenciesAsynchron#completableCurrency() mapped.
+2021-11-23 12:00:36,423|INFO |[restartedMain]||Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-23 12:00:36,428|INFO |[restartedMain]||HikariPool-1 - Shutdown initiated...
+2021-11-23 12:00:37,262|INFO |[restartedMain]||HikariPool-1 - Shutdown completed.
+2021-11-23 12:00:37,278|INFO |[restartedMain]||Stopping service [Tomcat]
+2021-11-23 12:00:37,333|INFO |[restartedMain]||
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-11-23 12:00:37,389|ERROR|[restartedMain]||Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'restCurrenciesAsynchron' method 
+bank.of.africa.multichannelV2.controller.RestCurrenciesAsynchron#completableCountry()
+to {GET [/Asyn/getCurrinciesRemote]}: There is already 'restCurrenciesAsynchron' bean method
+bank.of.africa.multichannelV2.controller.RestCurrenciesAsynchron#completableCurrency() mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at bank.of.africa.multichannelV2.MultichannelV2Application.main(MultichannelV2Application.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'restCurrenciesAsynchron' method 
+bank.of.africa.multichannelV2.controller.RestCurrenciesAsynchron#completableCountry()
+to {GET [/Asyn/getCurrinciesRemote]}: There is already 'restCurrenciesAsynchron' bean method
+bank.of.africa.multichannelV2.controller.RestCurrenciesAsynchron#completableCurrency() mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:665)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:631)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:328)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:395)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:76)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$2(AbstractHandlerMethodMapping.java:298)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:723)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:296)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:265)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:224)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:212)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:206)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	... 21 common frames omitted
+2021-11-23 12:02:28,823|INFO |[restartedMain]||Starting MultichannelV2Application using Java 16.0.2 on DESKTOP-U6F59BC with PID 13072 (C:\java\BOA\common-geeric-V4\target\classes started by osm in C:\java\BOA\common-geeric-V4)
+2021-11-23 12:02:28,836|INFO |[restartedMain]||No active profile set, falling back to default profiles: default
+2021-11-23 12:02:29,158|INFO |[restartedMain]||The Class-Path manifest attribute in C:\Users\osm\.m2\repository\com\oracle\database\jdbc\ojdbc8\21.1.0.0\ojdbc8-21.1.0.0.jar referenced one or more files that do not exist: file:/C:/Users/osm/.m2/repository/com/oracle/database/jdbc/ojdbc8/21.1.0.0/oraclepki.jar
+2021-11-23 12:02:29,161|INFO |[restartedMain]||Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-11-23 12:02:29,164|INFO |[restartedMain]||For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-11-23 12:02:34,106|INFO |[restartedMain]||Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-23 12:02:34,111|INFO |[restartedMain]||Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2021-11-23 12:02:34,207|INFO |[restartedMain]||Spring Data JDBC - Could not safely identify store assignment for repository candidate interface bank.of.africa.multichannelV2.dao.IClientTemp. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2021-11-23 12:02:34,212|INFO |[restartedMain]||Spring Data JDBC - Could not safely identify store assignment for repository candidate interface bank.of.africa.multichannelV2.dao.ICptViewTemp. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2021-11-23 12:02:34,215|INFO |[restartedMain]||Finished Spring Data repository scanning in 92 ms. Found 0 JDBC repository interfaces.
+2021-11-23 12:02:34,247|INFO |[restartedMain]||Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-23 12:02:34,250|INFO |[restartedMain]||Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-23 12:02:34,360|INFO |[restartedMain]||Finished Spring Data repository scanning in 97 ms. Found 2 JPA repository interfaces.
+2021-11-23 12:02:38,100|INFO |[restartedMain]||Tomcat initialized with port(s): 8085 (http)
+2021-11-23 12:02:38,169|INFO |[restartedMain]||Initializing ProtocolHandler ["http-nio-8085"]
+2021-11-23 12:02:38,170|INFO |[restartedMain]||Starting service [Tomcat]
+2021-11-23 12:02:38,171|INFO |[restartedMain]||Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-11-23 12:02:38,658|INFO |[restartedMain]||Initializing Spring embedded WebApplicationContext
+2021-11-23 12:02:38,659|INFO |[restartedMain]||Root WebApplicationContext: initialization completed in 9490 ms
+2021-11-23 12:02:41,562|INFO |[restartedMain]||HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-23 12:02:41,893|INFO |[restartedMain]||HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-11-23 12:02:42,815|INFO |[restartedMain]||HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-11-23 12:02:43,445|INFO |[restartedMain]||HikariPool-1 - Starting...
+2021-11-23 12:02:45,385|INFO |[restartedMain]||HikariPool-1 - Start completed.
+2021-11-23 12:02:45,559|INFO |[restartedMain]||HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2021-11-23 12:04:31,676|INFO |[restartedMain]||HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-23 12:04:31,707|INFO |[restartedMain]||Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-23 12:04:45,249|WARN |[restartedMain]||Unable to start LiveReload server
+2021-11-23 12:04:45,346|INFO |[restartedMain]||Exposing 13 endpoint(s) beneath base path '/actuator'
+2021-11-23 12:04:45,729|INFO |[restartedMain]||Starting ProtocolHandler ["http-nio-8085"]
+2021-11-23 12:04:45,827|INFO |[restartedMain]||Tomcat started on port(s): 8085 (http) with context path ''
+2021-11-23 12:04:46,002|INFO |[restartedMain]||Started MultichannelV2Application in 141.657 seconds (JVM running for 146.291)
+2021-11-23 12:08:10,163|INFO |[http-nio-8085-exec-1]||Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-23 12:08:10,164|INFO |[http-nio-8085-exec-1]||Initializing Servlet 'dispatcherServlet'
+2021-11-23 12:08:10,173|INFO |[http-nio-8085-exec-1]||Completed initialization in 8 ms
+2021-11-23 12:25:47,146|INFO |[Thread-1]||Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-23 12:25:47,174|INFO |[Thread-1]||HikariPool-1 - Shutdown initiated...
+2021-11-23 12:25:47,844|INFO |[Thread-1]||HikariPool-1 - Shutdown completed.
+2021-11-23 12:25:48,421|INFO |[restartedMain]||Starting MultichannelV2Application using Java 16.0.2 on DESKTOP-U6F59BC with PID 13072 (C:\java\BOA\common-geeric-V4\target\classes started by osm in C:\java\BOA\common-geeric-V4)
+2021-11-23 12:25:48,423|INFO |[restartedMain]||No active profile set, falling back to default profiles: default
+2021-11-23 12:25:51,223|INFO |[restartedMain]||Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-23 12:25:51,224|INFO |[restartedMain]||Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2021-11-23 12:25:51,245|INFO |[restartedMain]||Spring Data JDBC - Could not safely identify store assignment for repository candidate interface bank.of.africa.multichannelV2.dao.IClientTemp. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2021-11-23 12:25:51,250|INFO |[restartedMain]||Spring Data JDBC - Could not safely identify store assignment for repository candidate interface bank.of.africa.multichannelV2.dao.ICptViewTemp. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2021-11-23 12:25:51,250|INFO |[restartedMain]||Finished Spring Data repository scanning in 25 ms. Found 0 JDBC repository interfaces.
+2021-11-23 12:25:51,266|INFO |[restartedMain]||Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-23 12:25:51,268|INFO |[restartedMain]||Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-23 12:25:51,316|INFO |[restartedMain]||Finished Spring Data repository scanning in 46 ms. Found 2 JPA repository interfaces.
+2021-11-23 12:25:55,109|INFO |[restartedMain]||Tomcat initialized with port(s): 8085 (http)
+2021-11-23 12:25:55,110|INFO |[restartedMain]||Initializing ProtocolHandler ["http-nio-8085"]
+2021-11-23 12:25:55,111|INFO |[restartedMain]||Starting service [Tomcat]
+2021-11-23 12:25:55,112|INFO |[restartedMain]||Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-11-23 12:25:55,541|INFO |[restartedMain]||Initializing Spring embedded WebApplicationContext
+2021-11-23 12:25:55,542|INFO |[restartedMain]||Root WebApplicationContext: initialization completed in 7106 ms
+2021-11-23 12:25:56,090|INFO |[restartedMain]||HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-23 12:25:56,105|INFO |[restartedMain]||HikariPool-2 - Starting...
+2021-11-23 12:25:57,510|INFO |[restartedMain]||HikariPool-2 - Start completed.
+2021-11-23 12:25:57,516|INFO |[restartedMain]||HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2021-11-23 13:36:17,726|WARN |[HikariPool-2 housekeeper]||HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=1h9m20s104ms835µs800ns).
+2021-11-23 13:36:28,961|WARN |[restartedMain]||HikariPool-2 - Connection oracle.jdbc.driver.T4CConnection@7744782f marked as broken because of SQLSTATE(08006), ErrorCode(17002)
+java.sql.SQLRecoverableException: Erreur d'E/S: Une connexion établie a été abandonnée par un logiciel de votre ordinateur hôte
+	at oracle.jdbc.driver.T4CStatement.fetch(T4CStatement.java:1164)
+	at oracle.jdbc.driver.OracleStatement.fetchMoreRows(OracleStatement.java:3759)
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.fetchMoreRows(InsensitiveScrollableResultSet.java:821)
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.fetchNextRows(InsensitiveScrollableResultSet.java:759)
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.absoluteInternal(InsensitiveScrollableResultSet.java:731)
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.next(InsensitiveScrollableResultSet.java:436)
+	at com.zaxxer.hikari.pool.HikariProxyResultSet.next(HikariProxyResultSet.java)
+	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.populateTablesWithColumns(InformationExtractorJdbcDatabaseMetaDataImpl.java:363)
+	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.getTables(InformationExtractorJdbcDatabaseMetaDataImpl.java:341)
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.getTablesInformation(DatabaseInformationImpl.java:120)
+	at org.hibernate.tool.schema.internal.GroupedSchemaValidatorImpl.validateTables(GroupedSchemaValidatorImpl.java:39)
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.performValidation(AbstractSchemaValidator.java:89)
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.doValidation(AbstractSchemaValidator.java:68)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:192)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:318)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:468)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1259)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at bank.of.africa.multichannelV2.MultichannelV2Application.main(MultichannelV2Application.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.io.IOException: Une connexion établie a été abandonnée par un logiciel de votre ordinateur hôte
+	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:46)
+	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:276)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:245)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:223)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:417)
+	at oracle.net.nt.TimeoutSocketChannel.read(TimeoutSocketChannel.java:416)
+	at oracle.net.ns.NSProtocolNIO.doSocketRead(NSProtocolNIO.java:1119)
+	at oracle.net.ns.NIOPacket.readPayload(NIOPacket.java:312)
+	at oracle.net.ns.NIOPacket.readPacketFromSocketChannel(NIOPacket.java:216)
+	at oracle.net.ns.NIOPacket.readFromSocketChannel(NIOPacket.java:141)
+	at oracle.net.ns.NIOPacket.readFromSocketChannel(NIOPacket.java:114)
+	at oracle.net.ns.NIONSDataChannel.readDataFromSocketChannel(NIONSDataChannel.java:98)
+	at oracle.jdbc.driver.T4CMAREngineNIO.prepareForUnmarshall(T4CMAREngineNIO.java:834)
+	at oracle.jdbc.driver.T4CMAREngineNIO.unmarshalUB1(T4CMAREngineNIO.java:487)
+	at oracle.jdbc.driver.DynamicByteArray.unmarshalCLR(DynamicByteArray.java:191)
+	at oracle.jdbc.driver.T4CNumberAccessor.unmarshalBytes(T4CNumberAccessor.java:201)
+	at oracle.jdbc.driver.T4CNumberAccessor.unmarshalOneRow(T4CNumberAccessor.java:183)
+	at oracle.jdbc.driver.T4CTTIrxd.unmarshal(T4CTTIrxd.java:1693)
+	at oracle.jdbc.driver.T4CTTIrxd.unmarshal(T4CTTIrxd.java:1410)
+	at oracle.jdbc.driver.T4C8Oall.readRXD(T4C8Oall.java:929)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:638)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:291)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:492)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:108)
+	at oracle.jdbc.driver.T4CStatement.fetch(T4CStatement.java:1159)
+	... 45 common frames omitted
+2021-11-23 13:36:35,733|WARN |[restartedMain]||SQL Error: 17008, SQLState: 08003
+2021-11-23 13:36:35,737|ERROR|[restartedMain]||Connexion interrompue
+2021-11-23 13:36:35,999|ERROR|[restartedMain]||Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Error accessing tables metadata
+2021-11-23 13:36:36,000|WARN |[restartedMain]||Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Error accessing tables metadata
+2021-11-23 13:36:36,001|INFO |[restartedMain]||HikariPool-2 - Shutdown initiated...
+2021-11-23 13:36:39,769|INFO |[restartedMain]||HikariPool-2 - Shutdown completed.
+2021-11-23 13:36:39,772|INFO |[restartedMain]||Stopping service [Tomcat]
+2021-11-23 13:36:39,803|INFO |[restartedMain]||
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-11-23 13:36:40,414|ERROR|[restartedMain]||Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Error accessing tables metadata
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at bank.of.africa.multichannelV2.MultichannelV2Application.main(MultichannelV2Application.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Error accessing tables metadata
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	... 21 common frames omitted
+Caused by: org.hibernate.exception.JDBCConnectionException: Error accessing tables metadata
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:112)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:99)
+	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.convertSQLException(InformationExtractorJdbcDatabaseMetaDataImpl.java:102)
+	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.populateTablesWithColumns(InformationExtractorJdbcDatabaseMetaDataImpl.java:387)
+	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.getTables(InformationExtractorJdbcDatabaseMetaDataImpl.java:341)
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.getTablesInformation(DatabaseInformationImpl.java:120)
+	at org.hibernate.tool.schema.internal.GroupedSchemaValidatorImpl.validateTables(GroupedSchemaValidatorImpl.java:39)
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.performValidation(AbstractSchemaValidator.java:89)
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.doValidation(AbstractSchemaValidator.java:68)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:192)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:318)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:468)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1259)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	... 25 common frames omitted
+Caused by: java.sql.SQLRecoverableException: Connexion interrompue
+	at oracle.jdbc.driver.OracleStatement.ensureOpen(OracleStatement.java:4552)
+	at oracle.jdbc.driver.OracleStatement.clearWarnings(OracleStatement.java:3513)
+	at oracle.jdbc.driver.OracleStatement.prepareForNewResults(OracleStatement.java:4019)
+	at oracle.jdbc.driver.OracleStatement.endOfResultSet(OracleStatement.java:4138)
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.close(InsensitiveScrollableResultSet.java:232)
+	at oracle.jdbc.driver.ForwardOnlyResultSet.close(ForwardOnlyResultSet.java:66)
+	at com.zaxxer.hikari.pool.HikariProxyResultSet.close(HikariProxyResultSet.java)
+	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.populateTablesWithColumns(InformationExtractorJdbcDatabaseMetaDataImpl.java:383)
+	... 38 common frames omitted
+2021-11-23 14:26:02,016|INFO |[restartedMain]||Starting MultichannelV2Application using Java 16.0.2 on DESKTOP-U6F59BC with PID 13072 (C:\java\BOA\common-geeric-V4\target\classes started by osm in C:\java\BOA\common-geeric-V4)
+2021-11-23 14:26:02,028|INFO |[restartedMain]||No active profile set, falling back to default profiles: default
+2021-11-23 14:26:06,201|INFO |[restartedMain]||Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-23 14:26:06,204|INFO |[restartedMain]||Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2021-11-23 14:26:06,232|INFO |[restartedMain]||Spring Data JDBC - Could not safely identify store assignment for repository candidate interface bank.of.africa.multichannelV2.dao.IClientTemp. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2021-11-23 14:26:06,239|INFO |[restartedMain]||Spring Data JDBC - Could not safely identify store assignment for repository candidate interface bank.of.africa.multichannelV2.dao.ICptViewTemp. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2021-11-23 14:26:06,240|INFO |[restartedMain]||Finished Spring Data repository scanning in 34 ms. Found 0 JDBC repository interfaces.
+2021-11-23 14:26:06,250|INFO |[restartedMain]||Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-23 14:26:06,251|INFO |[restartedMain]||Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-23 14:26:06,286|INFO |[restartedMain]||Finished Spring Data repository scanning in 32 ms. Found 2 JPA repository interfaces.
+2021-11-23 14:26:07,341|INFO |[restartedMain]||Tomcat initialized with port(s): 8085 (http)
+2021-11-23 14:26:07,349|INFO |[restartedMain]||Initializing ProtocolHandler ["http-nio-8085"]
+2021-11-23 14:26:07,384|INFO |[restartedMain]||Starting service [Tomcat]
+2021-11-23 14:26:07,385|INFO |[restartedMain]||Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-11-23 14:26:07,499|INFO |[restartedMain]||Initializing Spring embedded WebApplicationContext
+2021-11-23 14:26:07,499|INFO |[restartedMain]||Root WebApplicationContext: initialization completed in 5360 ms
+2021-11-23 14:26:08,028|INFO |[restartedMain]||HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-23 14:26:08,082|INFO |[restartedMain]||HikariPool-3 - Starting...
+2021-11-23 14:26:30,433|ERROR|[restartedMain]||HikariPool-3 - Exception during pool initialization.
+java.sql.SQLRecoverableException: Erreur d'E/S: The Network Adapter could not establish the connection (CONNECTION_ID=JY1MJBnKTWu+TPkn/E74dA==)
+	at oracle.jdbc.driver.T4CConnection.handleLogonNetException(T4CConnection.java:870)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:675)
+	at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:1032)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:90)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:681)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:602)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:176)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1224)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1255)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at bank.of.africa.multichannelV2.MultichannelV2Application.main(MultichannelV2Application.java:17)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: oracle.net.ns.NetException: The Network Adapter could not establish the connection (CONNECTION_ID=JY1MJBnKTWu+TPkn/E74dA==)
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:594)
+	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:565)
+	at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:937)
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:346)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1967)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:640)
+	... 55 common frames omitted
+Caused by: java.io.IOException: Connection timed out: connect, socket connect lapse 21271 ms. 10.180.71.44 1521  30000 (1/1) true
+	at oracle.net.nt.TcpNTAdapter.establishSocket(TcpNTAdapter.java:421)
+	at oracle.net.nt.TcpNTAdapter.doLocalDNSLookupConnect(TcpNTAdapter.java:303)
+	at oracle.net.nt.TcpNTAdapter.connect(TcpNTAdapter.java:265)
+	at oracle.net.nt.ConnOption.connect(ConnOption.java:229)
+	at oracle.net.nt.ConnStrategy.executeConnOption(ConnStrategy.java:814)
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:555)
+	... 60 common frames omitted
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:576)
+	at java.base/sun.nio.ch.Net.connect(Net.java:583)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:851)
+	at java.base/java.nio.channels.SocketChannel.open(SocketChannel.java:285)
+	at oracle.net.nt.TimeoutSocketChannel.connect(TimeoutSocketChannel.java:184)
+	at oracle.net.nt.TimeoutSocketChannel.<init>(TimeoutSocketChannel.java:158)
+	at oracle.net.nt.TcpNTAdapter.establishSocket(TcpNTAdapter.java:380)
+	... 65 common frames omitted
+2021-11-23 14:26:30,472|WARN |[restartedMain]||HHH000342: Could not obtain connection to query metadata
+java.sql.SQLRecoverableException: Erreur d'E/S: The Network Adapter could not establish the connection (CONNECTION_ID=JY1MJBnKTWu+TPkn/E74dA==)
+	at oracle.jdbc.driver.T4CConnection.handleLogonNetException(T4CConnection.java:870)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:675)
+	at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:1032)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:90)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:681)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:602)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:176)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1224)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1255)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at bank.of.africa.multichannelV2.MultichannelV2Application.main(MultichannelV2Application.java:17)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: oracle.net.ns.NetException: The Network Adapter could not establish the connection (CONNECTION_ID=JY1MJBnKTWu+TPkn/E74dA==)
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:594)
+	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:565)
+	at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:937)
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:346)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1967)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:640)
+	... 55 common frames omitted
+Caused by: java.io.IOException: Connection timed out: connect, socket connect lapse 21271 ms. 10.180.71.44 1521  30000 (1/1) true
+	at oracle.net.nt.TcpNTAdapter.establishSocket(TcpNTAdapter.java:421)
+	at oracle.net.nt.TcpNTAdapter.doLocalDNSLookupConnect(TcpNTAdapter.java:303)
+	at oracle.net.nt.TcpNTAdapter.connect(TcpNTAdapter.java:265)
+	at oracle.net.nt.ConnOption.connect(ConnOption.java:229)
+	at oracle.net.nt.ConnStrategy.executeConnOption(ConnStrategy.java:814)
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:555)
+	... 60 common frames omitted
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:576)
+	at java.base/sun.nio.ch.Net.connect(Net.java:583)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:851)
+	at java.base/java.nio.channels.SocketChannel.open(SocketChannel.java:285)
+	at oracle.net.nt.TimeoutSocketChannel.connect(TimeoutSocketChannel.java:184)
+	at oracle.net.nt.TimeoutSocketChannel.<init>(TimeoutSocketChannel.java:158)
+	at oracle.net.nt.TcpNTAdapter.establishSocket(TcpNTAdapter.java:380)
+	... 65 common frames omitted
+2021-11-23 14:26:30,488|INFO |[restartedMain]||HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2021-11-23 14:26:32,980|INFO |[restartedMain]||HikariPool-3 - Starting...
+2021-11-23 14:26:55,023|ERROR|[restartedMain]||HikariPool-3 - Exception during pool initialization.
+java.sql.SQLRecoverableException: Erreur d'E/S: The Network Adapter could not establish the connection (CONNECTION_ID=B6SSw6DBQ6yOSYm8lRn/hA==)
+	at oracle.jdbc.driver.T4CConnection.handleLogonNetException(T4CConnection.java:870)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:675)
+	at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:1032)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:90)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:681)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:602)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:43)
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:60)
+	at org.hibernate.tool.schema.extract.internal.SequenceInformationExtractorLegacyImpl.extractMetadata(SequenceInformationExtractorLegacyImpl.java:40)
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.initializeSequences(DatabaseInformationImpl.java:65)
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.<init>(DatabaseInformationImpl.java:59)
+	at org.hibernate.tool.schema.internal.Helper.buildDatabaseInformation(Helper.java:155)
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.doValidation(AbstractSchemaValidator.java:61)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:192)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:318)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:468)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1259)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at bank.of.africa.multichannelV2.MultichannelV2Application.main(MultichannelV2Application.java:17)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: oracle.net.ns.NetException: The Network Adapter could not establish the connection (CONNECTION_ID=B6SSw6DBQ6yOSYm8lRn/hA==)
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:594)
+	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:565)
+	at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:937)
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:346)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1967)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:640)
+	... 53 common frames omitted
+Caused by: java.io.IOException: Connection timed out: connect, socket connect lapse 21032 ms. 10.180.71.44 1521  30000 (1/1) true
+	at oracle.net.nt.TcpNTAdapter.establishSocket(TcpNTAdapter.java:421)
+	at oracle.net.nt.TcpNTAdapter.doLocalDNSLookupConnect(TcpNTAdapter.java:303)
+	at oracle.net.nt.TcpNTAdapter.connect(TcpNTAdapter.java:265)
+	at oracle.net.nt.ConnOption.connect(ConnOption.java:229)
+	at oracle.net.nt.ConnStrategy.executeConnOption(ConnStrategy.java:814)
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:555)
+	... 58 common frames omitted
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:576)
+	at java.base/sun.nio.ch.Net.connect(Net.java:583)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:851)
+	at java.base/java.nio.channels.SocketChannel.open(SocketChannel.java:285)
+	at oracle.net.nt.TimeoutSocketChannel.connect(TimeoutSocketChannel.java:184)
+	at oracle.net.nt.TimeoutSocketChannel.<init>(TimeoutSocketChannel.java:158)
+	at oracle.net.nt.TcpNTAdapter.establishSocket(TcpNTAdapter.java:380)
+	... 63 common frames omitted
+2021-11-23 14:26:55,089|WARN |[restartedMain]||SQL Error: 17002, SQLState: 08006
+2021-11-23 14:26:55,089|ERROR|[restartedMain]||Erreur d'E/S: The Network Adapter could not establish the connection (CONNECTION_ID=B6SSw6DBQ6yOSYm8lRn/hA==)
+2021-11-23 14:26:55,153|ERROR|[restartedMain]||Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+2021-11-23 14:26:55,158|WARN |[restartedMain]||Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+2021-11-23 14:26:55,188|INFO |[restartedMain]||Stopping service [Tomcat]
+2021-11-23 14:26:55,233|INFO |[restartedMain]||
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-11-23 14:26:55,247|ERROR|[restartedMain]||Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at bank.of.africa.multichannelV2.MultichannelV2Application.main(MultichannelV2Application.java:17)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	... 21 common frames omitted
+Caused by: org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:112)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:99)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:69)
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:60)
+	at org.hibernate.tool.schema.extract.internal.SequenceInformationExtractorLegacyImpl.extractMetadata(SequenceInformationExtractorLegacyImpl.java:40)
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.initializeSequences(DatabaseInformationImpl.java:65)
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.<init>(DatabaseInformationImpl.java:59)
+	at org.hibernate.tool.schema.internal.Helper.buildDatabaseInformation(Helper.java:155)
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.doValidation(AbstractSchemaValidator.java:61)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:192)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:318)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:468)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1259)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	... 25 common frames omitted
+Caused by: java.sql.SQLRecoverableException: Erreur d'E/S: The Network Adapter could not establish the connection (CONNECTION_ID=B6SSw6DBQ6yOSYm8lRn/hA==)
+	at oracle.jdbc.driver.T4CConnection.handleLogonNetException(T4CConnection.java:870)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:675)
+	at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:1032)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:90)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:681)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:602)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:43)
+	... 39 common frames omitted
+Caused by: oracle.net.ns.NetException: The Network Adapter could not establish the connection (CONNECTION_ID=B6SSw6DBQ6yOSYm8lRn/hA==)
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:594)
+	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:565)
+	at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:937)
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:346)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1967)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:640)
+	... 53 common frames omitted
+Caused by: java.io.IOException: Connection timed out: connect, socket connect lapse 21032 ms. 10.180.71.44 1521  30000 (1/1) true
+	at oracle.net.nt.TcpNTAdapter.establishSocket(TcpNTAdapter.java:421)
+	at oracle.net.nt.TcpNTAdapter.doLocalDNSLookupConnect(TcpNTAdapter.java:303)
+	at oracle.net.nt.TcpNTAdapter.connect(TcpNTAdapter.java:265)
+	at oracle.net.nt.ConnOption.connect(ConnOption.java:229)
+	at oracle.net.nt.ConnStrategy.executeConnOption(ConnStrategy.java:814)
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:555)
+	... 58 common frames omitted
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:576)
+	at java.base/sun.nio.ch.Net.connect(Net.java:583)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:851)
+	at java.base/java.nio.channels.SocketChannel.open(SocketChannel.java:285)
+	at oracle.net.nt.TimeoutSocketChannel.connect(TimeoutSocketChannel.java:184)
+	at oracle.net.nt.TimeoutSocketChannel.<init>(TimeoutSocketChannel.java:158)
+	at oracle.net.nt.TcpNTAdapter.establishSocket(TcpNTAdapter.java:380)
+	... 63 common frames omitted
+2021-11-23 15:22:50,142|INFO |[restartedMain]||Starting MultichannelV2Application using Java 16.0.2 on DESKTOP-U6F59BC with PID 13072 (C:\java\BOA\common-geeric-V4\target\classes started by osm in C:\java\BOA\common-geeric-V4)
+2021-11-23 15:22:50,143|INFO |[restartedMain]||No active profile set, falling back to default profiles: default
+2021-11-23 15:22:53,147|INFO |[restartedMain]||Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-23 15:22:53,150|INFO |[restartedMain]||Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2021-11-23 15:22:53,198|INFO |[restartedMain]||Spring Data JDBC - Could not safely identify store assignment for repository candidate interface bank.of.africa.multichannelV2.dao.IClientTemp. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2021-11-23 15:22:53,203|INFO |[restartedMain]||Spring Data JDBC - Could not safely identify store assignment for repository candidate interface bank.of.africa.multichannelV2.dao.ICptViewTemp. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2021-11-23 15:22:53,205|INFO |[restartedMain]||Finished Spring Data repository scanning in 35 ms. Found 0 JDBC repository interfaces.
+2021-11-23 15:22:53,217|INFO |[restartedMain]||Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-23 15:22:53,221|INFO |[restartedMain]||Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-23 15:22:53,297|INFO |[restartedMain]||Finished Spring Data repository scanning in 44 ms. Found 2 JPA repository interfaces.
+2021-11-23 15:22:54,037|INFO |[restartedMain]||Tomcat initialized with port(s): 8085 (http)
+2021-11-23 15:22:54,042|INFO |[restartedMain]||Initializing ProtocolHandler ["http-nio-8085"]
+2021-11-23 15:22:54,047|INFO |[restartedMain]||Starting service [Tomcat]
+2021-11-23 15:22:54,049|INFO |[restartedMain]||Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-11-23 15:22:54,124|INFO |[restartedMain]||Initializing Spring embedded WebApplicationContext
+2021-11-23 15:22:54,125|INFO |[restartedMain]||Root WebApplicationContext: initialization completed in 3951 ms
+2021-11-23 15:22:54,594|INFO |[restartedMain]||HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-23 15:22:54,630|INFO |[restartedMain]||HikariPool-4 - Starting...
+2021-11-23 15:23:16,861|ERROR|[restartedMain]||HikariPool-4 - Exception during pool initialization.
+java.sql.SQLRecoverableException: Erreur d'E/S: The Network Adapter could not establish the connection (CONNECTION_ID=tniWk2MxRjW4GlIj9TpGVQ==)
+	at oracle.jdbc.driver.T4CConnection.handleLogonNetException(T4CConnection.java:870)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:675)
+	at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:1032)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:90)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:681)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:602)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:176)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1224)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1255)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at bank.of.africa.multichannelV2.MultichannelV2Application.main(MultichannelV2Application.java:17)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: oracle.net.ns.NetException: The Network Adapter could not establish the connection (CONNECTION_ID=tniWk2MxRjW4GlIj9TpGVQ==)
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:594)
+	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:565)
+	at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:937)
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:346)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1967)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:640)
+	... 55 common frames omitted
+Caused by: java.io.IOException: Connection timed out: connect, socket connect lapse 21174 ms. 10.180.71.44 1521  30000 (1/1) true
+	at oracle.net.nt.TcpNTAdapter.establishSocket(TcpNTAdapter.java:421)
+	at oracle.net.nt.TcpNTAdapter.doLocalDNSLookupConnect(TcpNTAdapter.java:303)
+	at oracle.net.nt.TcpNTAdapter.connect(TcpNTAdapter.java:265)
+	at oracle.net.nt.ConnOption.connect(ConnOption.java:229)
+	at oracle.net.nt.ConnStrategy.executeConnOption(ConnStrategy.java:814)
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:555)
+	... 60 common frames omitted
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:576)
+	at java.base/sun.nio.ch.Net.connect(Net.java:583)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:851)
+	at java.base/java.nio.channels.SocketChannel.open(SocketChannel.java:285)
+	at oracle.net.nt.TimeoutSocketChannel.connect(TimeoutSocketChannel.java:184)
+	at oracle.net.nt.TimeoutSocketChannel.<init>(TimeoutSocketChannel.java:158)
+	at oracle.net.nt.TcpNTAdapter.establishSocket(TcpNTAdapter.java:380)
+	... 65 common frames omitted
+2021-11-23 15:23:16,864|WARN |[restartedMain]||HHH000342: Could not obtain connection to query metadata
+java.sql.SQLRecoverableException: Erreur d'E/S: The Network Adapter could not establish the connection (CONNECTION_ID=tniWk2MxRjW4GlIj9TpGVQ==)
+	at oracle.jdbc.driver.T4CConnection.handleLogonNetException(T4CConnection.java:870)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:675)
+	at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:1032)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:90)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:681)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:602)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:176)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1224)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1255)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at bank.of.africa.multichannelV2.MultichannelV2Application.main(MultichannelV2Application.java:17)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: oracle.net.ns.NetException: The Network Adapter could not establish the connection (CONNECTION_ID=tniWk2MxRjW4GlIj9TpGVQ==)
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:594)
+	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:565)
+	at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:937)
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:346)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1967)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:640)
+	... 55 common frames omitted
+Caused by: java.io.IOException: Connection timed out: connect, socket connect lapse 21174 ms. 10.180.71.44 1521  30000 (1/1) true
+	at oracle.net.nt.TcpNTAdapter.establishSocket(TcpNTAdapter.java:421)
+	at oracle.net.nt.TcpNTAdapter.doLocalDNSLookupConnect(TcpNTAdapter.java:303)
+	at oracle.net.nt.TcpNTAdapter.connect(TcpNTAdapter.java:265)
+	at oracle.net.nt.ConnOption.connect(ConnOption.java:229)
+	at oracle.net.nt.ConnStrategy.executeConnOption(ConnStrategy.java:814)
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:555)
+	... 60 common frames omitted
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:576)
+	at java.base/sun.nio.ch.Net.connect(Net.java:583)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:851)
+	at java.base/java.nio.channels.SocketChannel.open(SocketChannel.java:285)
+	at oracle.net.nt.TimeoutSocketChannel.connect(TimeoutSocketChannel.java:184)
+	at oracle.net.nt.TimeoutSocketChannel.<init>(TimeoutSocketChannel.java:158)
+	at oracle.net.nt.TcpNTAdapter.establishSocket(TcpNTAdapter.java:380)
+	... 65 common frames omitted
+2021-11-23 15:23:16,873|INFO |[restartedMain]||HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2021-11-23 15:23:17,056|INFO |[restartedMain]||HikariPool-4 - Starting...
+2021-11-23 15:23:44,045|INFO |[restartedMain]||Starting MultichannelV2Application using Java 16.0.2 on DESKTOP-U6F59BC with PID 16292 (C:\java\BOA\common-geeric-V4\target\classes started by osm in C:\java\BOA\common-geeric-V4)
+2021-11-23 15:23:44,068|INFO |[restartedMain]||No active profile set, falling back to default profiles: default
+2021-11-23 15:23:44,393|INFO |[restartedMain]||The Class-Path manifest attribute in C:\Users\osm\.m2\repository\com\oracle\database\jdbc\ojdbc8\21.1.0.0\ojdbc8-21.1.0.0.jar referenced one or more files that do not exist: file:/C:/Users/osm/.m2/repository/com/oracle/database/jdbc/ojdbc8/21.1.0.0/oraclepki.jar
+2021-11-23 15:23:44,395|INFO |[restartedMain]||Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-11-23 15:23:44,398|INFO |[restartedMain]||For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-11-23 15:23:54,456|INFO |[restartedMain]||Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-23 15:23:54,469|INFO |[restartedMain]||Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2021-11-23 15:23:54,649|INFO |[restartedMain]||Spring Data JDBC - Could not safely identify store assignment for repository candidate interface bank.of.africa.multichannelV2.dao.IClientTemp. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2021-11-23 15:23:54,682|INFO |[restartedMain]||Spring Data JDBC - Could not safely identify store assignment for repository candidate interface bank.of.africa.multichannelV2.dao.ICptViewTemp. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2021-11-23 15:23:54,685|INFO |[restartedMain]||Finished Spring Data repository scanning in 196 ms. Found 0 JDBC repository interfaces.
+2021-11-23 15:23:54,717|INFO |[restartedMain]||Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-23 15:23:54,720|INFO |[restartedMain]||Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-23 15:23:54,863|INFO |[restartedMain]||Finished Spring Data repository scanning in 124 ms. Found 2 JPA repository interfaces.
+2021-11-23 15:24:01,310|INFO |[restartedMain]||Tomcat initialized with port(s): 8085 (http)
+2021-11-23 15:24:01,413|INFO |[restartedMain]||Initializing ProtocolHandler ["http-nio-8085"]
+2021-11-23 15:24:01,426|INFO |[restartedMain]||Starting service [Tomcat]
+2021-11-23 15:24:01,439|INFO |[restartedMain]||Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-11-23 15:24:02,176|INFO |[restartedMain]||Initializing Spring embedded WebApplicationContext
+2021-11-23 15:24:02,178|INFO |[restartedMain]||Root WebApplicationContext: initialization completed in 17768 ms
+2021-11-23 15:24:09,019|INFO |[restartedMain]||HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-23 15:24:09,421|INFO |[restartedMain]||HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-11-23 15:24:10,217|INFO |[restartedMain]||HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-11-23 15:24:10,750|INFO |[restartedMain]||HikariPool-1 - Starting...
+2021-11-23 15:24:13,544|INFO |[restartedMain]||HikariPool-1 - Start completed.
+2021-11-23 15:24:13,868|INFO |[restartedMain]||HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2021-11-23 15:26:14,662|INFO |[restartedMain]||HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-23 15:26:14,690|INFO |[restartedMain]||Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-23 15:26:29,152|WARN |[restartedMain]||Unable to start LiveReload server
+2021-11-23 15:26:29,209|INFO |[restartedMain]||Exposing 13 endpoint(s) beneath base path '/actuator'
+2021-11-23 15:26:29,473|INFO |[restartedMain]||Starting ProtocolHandler ["http-nio-8085"]
+2021-11-23 15:26:29,584|INFO |[restartedMain]||Tomcat started on port(s): 8085 (http) with context path ''
+2021-11-23 15:26:29,743|INFO |[restartedMain]||Started MultichannelV2Application in 169.7 seconds (JVM running for 172.844)
+2021-11-23 15:31:34,143|INFO |[restartedMain]||Starting MultichannelV2Application using Java 16.0.2 on DESKTOP-U6F59BC with PID 10972 (C:\java\BOA\common-geeric-V4\target\classes started by osm in C:\java\BOA\common-geeric-V4)
+2021-11-23 15:31:34,158|INFO |[restartedMain]||No active profile set, falling back to default profiles: default
+2021-11-23 15:31:34,364|INFO |[restartedMain]||The Class-Path manifest attribute in C:\Users\osm\.m2\repository\com\oracle\database\jdbc\ojdbc8\21.1.0.0\ojdbc8-21.1.0.0.jar referenced one or more files that do not exist: file:/C:/Users/osm/.m2/repository/com/oracle/database/jdbc/ojdbc8/21.1.0.0/oraclepki.jar
+2021-11-23 15:31:34,369|INFO |[restartedMain]||Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-11-23 15:31:34,376|INFO |[restartedMain]||For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-11-23 15:31:39,067|INFO |[restartedMain]||Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-23 15:31:39,074|INFO |[restartedMain]||Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2021-11-23 15:31:39,166|INFO |[restartedMain]||Spring Data JDBC - Could not safely identify store assignment for repository candidate interface bank.of.africa.multichannelV2.dao.IClientTemp. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2021-11-23 15:31:39,174|INFO |[restartedMain]||Spring Data JDBC - Could not safely identify store assignment for repository candidate interface bank.of.africa.multichannelV2.dao.ICptViewTemp. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2021-11-23 15:31:39,179|INFO |[restartedMain]||Finished Spring Data repository scanning in 89 ms. Found 0 JDBC repository interfaces.
+2021-11-23 15:31:39,206|INFO |[restartedMain]||Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-23 15:31:39,210|INFO |[restartedMain]||Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-23 15:31:39,319|INFO |[restartedMain]||Finished Spring Data repository scanning in 91 ms. Found 2 JPA repository interfaces.
+2021-11-23 15:31:42,799|INFO |[restartedMain]||Tomcat initialized with port(s): 8085 (http)
+2021-11-23 15:31:42,838|INFO |[restartedMain]||Initializing ProtocolHandler ["http-nio-8085"]
+2021-11-23 15:31:42,841|INFO |[restartedMain]||Starting service [Tomcat]
+2021-11-23 15:31:42,843|INFO |[restartedMain]||Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-11-23 15:31:43,138|INFO |[restartedMain]||Initializing Spring embedded WebApplicationContext
+2021-11-23 15:31:43,138|INFO |[restartedMain]||Root WebApplicationContext: initialization completed in 8756 ms
+2021-11-23 15:31:45,281|INFO |[restartedMain]||HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-23 15:31:45,646|INFO |[restartedMain]||HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-11-23 15:31:46,226|INFO |[restartedMain]||HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-11-23 15:31:46,690|INFO |[restartedMain]||HikariPool-1 - Starting...
+2021-11-23 15:31:49,607|INFO |[restartedMain]||HikariPool-1 - Start completed.
+2021-11-23 15:31:49,689|INFO |[restartedMain]||HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2021-11-23 15:33:22,207|INFO |[restartedMain]||HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-23 15:33:22,239|INFO |[restartedMain]||Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-23 15:33:36,910|WARN |[restartedMain]||Unable to start LiveReload server
+2021-11-23 15:33:37,006|INFO |[restartedMain]||Exposing 13 endpoint(s) beneath base path '/actuator'
+2021-11-23 15:33:37,329|INFO |[restartedMain]||Starting ProtocolHandler ["http-nio-8085"]
+2021-11-23 15:33:37,446|INFO |[restartedMain]||Tomcat started on port(s): 8085 (http) with context path ''
+2021-11-23 15:33:37,530|INFO |[restartedMain]||Started MultichannelV2Application in 125.129 seconds (JVM running for 129.39)
+2021-11-23 15:37:10,669|INFO |[http-nio-8085-exec-1]||Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-23 15:37:10,670|INFO |[http-nio-8085-exec-1]||Initializing Servlet 'dispatcherServlet'
+2021-11-23 15:37:10,674|INFO |[http-nio-8085-exec-1]||Completed initialization in 3 ms
+2021-11-23 15:37:12,333|ERROR|[http-nio-8085-exec-1]||Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.client.RestClientException: Error while extracting response for type [class bank.of.africa.multichannelV2.entite.Country] and content type [application/json]; nested exception is org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `bank.of.africa.multichannelV2.entite.Country` from Array value (token `JsonToken.START_ARRAY`); nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize value of type `bank.of.africa.multichannelV2.entite.Country` from Array value (token `JsonToken.START_ARRAY`)
+ at [Source: (PushbackInputStream); line: 1, column: 1]] with root cause
+com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize value of type `bank.of.africa.multichannelV2.entite.Country` from Array value (token `JsonToken.START_ARRAY`)
+ at [Source: (PushbackInputStream); line: 1, column: 1]
+	at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:59)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportInputMismatch(DeserializationContext.java:1601)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1375)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1322)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer._deserializeFromArray(BeanDeserializer.java:640)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer._deserializeOther(BeanDeserializer.java:221)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:197)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:322)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4593)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3601)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:378)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.read(AbstractJackson2HttpMessageConverter.java:342)
+	at org.springframework.web.client.HttpMessageConverterExtractor.extractData(HttpMessageConverterExtractor.java:105)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:778)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.getForObject(RestTemplate.java:334)
+	at bank.of.africa.multichannelV2.controller.RestCurrenciesAsynchron.completableCountry(RestCurrenciesAsynchron.java:29)
+	at bank.of.africa.multichannelV2.controller.RestCurrenciesAsynchron.getAllEntities(RestCurrenciesAsynchron.java:48)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1064)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+2021-11-23 15:48:25,501|INFO |[restartedMain]||Starting MultichannelV2Application using Java 16.0.2 on DESKTOP-U6F59BC with PID 23216 (C:\java\BOA\common-geeric-V4\target\classes started by osm in C:\java\BOA\common-geeric-V4)
+2021-11-23 15:48:25,550|INFO |[restartedMain]||No active profile set, falling back to default profiles: default
+2021-11-23 15:48:27,105|INFO |[restartedMain]||The Class-Path manifest attribute in C:\Users\osm\.m2\repository\com\oracle\database\jdbc\ojdbc8\21.1.0.0\ojdbc8-21.1.0.0.jar referenced one or more files that do not exist: file:/C:/Users/osm/.m2/repository/com/oracle/database/jdbc/ojdbc8/21.1.0.0/oraclepki.jar
+2021-11-23 15:48:27,135|INFO |[restartedMain]||Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-11-23 15:48:27,164|INFO |[restartedMain]||For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-11-23 15:48:33,816|INFO |[restartedMain]||Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-23 15:48:33,855|INFO |[restartedMain]||Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2021-11-23 15:48:34,095|INFO |[restartedMain]||Spring Data JDBC - Could not safely identify store assignment for repository candidate interface bank.of.africa.multichannelV2.dao.IClientTemp. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2021-11-23 15:48:34,113|INFO |[restartedMain]||Spring Data JDBC - Could not safely identify store assignment for repository candidate interface bank.of.africa.multichannelV2.dao.ICptViewTemp. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2021-11-23 15:48:34,122|INFO |[restartedMain]||Finished Spring Data repository scanning in 193 ms. Found 0 JDBC repository interfaces.
+2021-11-23 15:48:34,169|INFO |[restartedMain]||Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-23 15:48:34,173|INFO |[restartedMain]||Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-23 15:48:34,382|INFO |[restartedMain]||Finished Spring Data repository scanning in 186 ms. Found 2 JPA repository interfaces.
+2021-11-23 15:48:41,294|INFO |[restartedMain]||Tomcat initialized with port(s): 8085 (http)
+2021-11-23 15:48:41,345|INFO |[restartedMain]||Initializing ProtocolHandler ["http-nio-8085"]
+2021-11-23 15:48:41,353|INFO |[restartedMain]||Starting service [Tomcat]
+2021-11-23 15:48:41,356|INFO |[restartedMain]||Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-11-23 15:48:42,062|INFO |[restartedMain]||Initializing Spring embedded WebApplicationContext
+2021-11-23 15:48:42,069|INFO |[restartedMain]||Root WebApplicationContext: initialization completed in 14872 ms
+2021-11-23 15:48:48,019|INFO |[restartedMain]||HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-23 15:48:48,521|INFO |[restartedMain]||HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-11-23 15:48:49,338|INFO |[restartedMain]||HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-11-23 15:48:50,261|INFO |[restartedMain]||HikariPool-1 - Starting...
+2021-11-23 15:48:51,832|INFO |[restartedMain]||HikariPool-1 - Start completed.
+2021-11-23 15:48:51,877|INFO |[restartedMain]||HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2021-11-23 15:50:39,406|INFO |[restartedMain]||HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-23 15:50:39,436|INFO |[restartedMain]||Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-23 15:50:56,797|WARN |[restartedMain]||Unable to start LiveReload server
+2021-11-23 15:50:56,838|INFO |[restartedMain]||Exposing 13 endpoint(s) beneath base path '/actuator'
+2021-11-23 15:50:57,191|INFO |[restartedMain]||Starting ProtocolHandler ["http-nio-8085"]
+2021-11-23 15:50:57,334|INFO |[restartedMain]||Tomcat started on port(s): 8085 (http) with context path ''
+2021-11-23 15:50:57,422|INFO |[restartedMain]||Started MultichannelV2Application in 155.066 seconds (JVM running for 158.044)
+2021-11-23 15:51:13,414|INFO |[http-nio-8085-exec-1]||Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-23 15:51:13,414|INFO |[http-nio-8085-exec-1]||Initializing Servlet 'dispatcherServlet'
+2021-11-23 15:51:13,417|INFO |[http-nio-8085-exec-1]||Completed initialization in 2 ms
+2021-11-23 15:51:31,630|ERROR|[http-nio-8085-exec-1]||Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.client.HttpServerErrorException$InternalServerError: 500 : [{"timestamp":"2021-11-23T14:51:31.571+00:00","status":500,"error":"Internal Server Error","trace":"javax.persistence.PersistenceException: org.hibernate.exception.SQLGrammarException: could not extrac... (9693 bytes)]] with root cause
+org.springframework.web.client.HttpServerErrorException$InternalServerError: 500 : [{"timestamp":"2021-11-23T14:51:31.571+00:00","status":500,"error":"Internal Server Error","trace":"javax.persistence.PersistenceException: org.hibernate.exception.SQLGrammarException: could not extrac... (9693 bytes)]
+	at org.springframework.web.client.HttpServerErrorException.create(HttpServerErrorException.java:100)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:188)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:125)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63)
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:819)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:777)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.getForObject(RestTemplate.java:334)
+	at bank.of.africa.multichannelV2.controller.RestCurrenciesAsynchron.completableCountry(RestCurrenciesAsynchron.java:29)
+	at bank.of.africa.multichannelV2.controller.RestCurrenciesAsynchron.getAllEntities(RestCurrenciesAsynchron.java:48)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1064)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+2021-11-23 15:52:45,412|ERROR|[http-nio-8085-exec-3]||Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.client.HttpServerErrorException$InternalServerError: 500 : [{"timestamp":"2021-11-23T14:52:45.400+00:00","status":500,"error":"Internal Server Error","trace":"javax.persistence.PersistenceException: org.hibernate.exception.SQLGrammarException: could not extrac... (9693 bytes)]] with root cause
+org.springframework.web.client.HttpServerErrorException$InternalServerError: 500 : [{"timestamp":"2021-11-23T14:52:45.400+00:00","status":500,"error":"Internal Server Error","trace":"javax.persistence.PersistenceException: org.hibernate.exception.SQLGrammarException: could not extrac... (9693 bytes)]
+	at org.springframework.web.client.HttpServerErrorException.create(HttpServerErrorException.java:100)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:188)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:125)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63)
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:819)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:777)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.getForObject(RestTemplate.java:334)
+	at bank.of.africa.multichannelV2.controller.RestCurrenciesAsynchron.completableCountry(RestCurrenciesAsynchron.java:29)
+	at bank.of.africa.multichannelV2.controller.RestCurrenciesAsynchron.getAllEntities(RestCurrenciesAsynchron.java:48)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1064)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+2021-11-23 16:01:25,320|INFO |[Thread-1]||Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-23 16:01:25,434|INFO |[Thread-1]||HikariPool-1 - Shutdown initiated...
+2021-11-23 16:01:26,436|INFO |[Thread-1]||HikariPool-1 - Shutdown completed.
+2021-11-23 16:01:27,911|INFO |[restartedMain]||Starting MultichannelV2Application using Java 16.0.2 on DESKTOP-U6F59BC with PID 23216 (C:\java\BOA\common-geeric-V4\target\classes started by osm in C:\java\BOA\common-geeric-V4)
+2021-11-23 16:01:27,912|INFO |[restartedMain]||No active profile set, falling back to default profiles: default
+2021-11-23 16:01:31,508|INFO |[restartedMain]||Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-23 16:01:31,510|INFO |[restartedMain]||Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2021-11-23 16:01:31,526|INFO |[restartedMain]||Spring Data JDBC - Could not safely identify store assignment for repository candidate interface bank.of.africa.multichannelV2.dao.IClientTemp. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2021-11-23 16:01:31,531|INFO |[restartedMain]||Spring Data JDBC - Could not safely identify store assignment for repository candidate interface bank.of.africa.multichannelV2.dao.ICptViewTemp. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2021-11-23 16:01:31,532|INFO |[restartedMain]||Finished Spring Data repository scanning in 19 ms. Found 0 JDBC repository interfaces.
+2021-11-23 16:01:31,593|INFO |[restartedMain]||Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-23 16:01:31,595|INFO |[restartedMain]||Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-23 16:01:31,679|INFO |[restartedMain]||Finished Spring Data repository scanning in 82 ms. Found 2 JPA repository interfaces.
+2021-11-23 16:01:33,145|INFO |[restartedMain]||Tomcat initialized with port(s): 8085 (http)
+2021-11-23 16:01:33,147|INFO |[restartedMain]||Initializing ProtocolHandler ["http-nio-8085"]
+2021-11-23 16:01:33,148|INFO |[restartedMain]||Starting service [Tomcat]
+2021-11-23 16:01:33,150|INFO |[restartedMain]||Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-11-23 16:01:33,305|INFO |[restartedMain]||Initializing Spring embedded WebApplicationContext
+2021-11-23 16:01:33,306|INFO |[restartedMain]||Root WebApplicationContext: initialization completed in 4733 ms
+2021-11-23 16:01:33,808|INFO |[restartedMain]||HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-23 16:01:33,824|INFO |[restartedMain]||HikariPool-2 - Starting...
+2021-11-23 16:01:34,886|ERROR|[restartedMain]||HikariPool-2 - Exception during pool initialization.
+java.sql.SQLRecoverableException: Erreur d'E/S: The Network Adapter could not establish the connection (CONNECTION_ID=sNohd6t6TeiFxZ0GoUz8Ng==)
+	at oracle.jdbc.driver.T4CConnection.handleLogonNetException(T4CConnection.java:870)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:675)
+	at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:1032)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:90)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:681)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:602)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:176)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1224)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1255)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at bank.of.africa.multichannelV2.MultichannelV2Application.main(MultichannelV2Application.java:17)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: oracle.net.ns.NetException: The Network Adapter could not establish the connection (CONNECTION_ID=sNohd6t6TeiFxZ0GoUz8Ng==)
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:594)
+	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:565)
+	at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:937)
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:346)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1967)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:640)
+	... 55 common frames omitted
+Caused by: java.io.IOException: Connection refused: connect, socket connect lapse 5 ms. 0:0:0:0:0:0:0:1 1521  30000 (1/1) true
+	at oracle.net.nt.TcpNTAdapter.establishSocket(TcpNTAdapter.java:421)
+	at oracle.net.nt.TcpNTAdapter.doLocalDNSLookupConnect(TcpNTAdapter.java:303)
+	at oracle.net.nt.TcpNTAdapter.connect(TcpNTAdapter.java:265)
+	at oracle.net.nt.ConnOption.connect(ConnOption.java:229)
+	at oracle.net.nt.ConnStrategy.executeConnOption(ConnStrategy.java:814)
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:555)
+	... 60 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:576)
+	at java.base/sun.nio.ch.Net.connect(Net.java:583)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:851)
+	at java.base/java.nio.channels.SocketChannel.open(SocketChannel.java:285)
+	at oracle.net.nt.TimeoutSocketChannel.connect(TimeoutSocketChannel.java:184)
+	at oracle.net.nt.TimeoutSocketChannel.<init>(TimeoutSocketChannel.java:158)
+	at oracle.net.nt.TcpNTAdapter.establishSocket(TcpNTAdapter.java:380)
+	... 65 common frames omitted
+2021-11-23 16:01:34,894|WARN |[restartedMain]||HHH000342: Could not obtain connection to query metadata
+java.sql.SQLRecoverableException: Erreur d'E/S: The Network Adapter could not establish the connection (CONNECTION_ID=sNohd6t6TeiFxZ0GoUz8Ng==)
+	at oracle.jdbc.driver.T4CConnection.handleLogonNetException(T4CConnection.java:870)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:675)
+	at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:1032)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:90)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:681)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:602)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:176)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1224)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1255)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at bank.of.africa.multichannelV2.MultichannelV2Application.main(MultichannelV2Application.java:17)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: oracle.net.ns.NetException: The Network Adapter could not establish the connection (CONNECTION_ID=sNohd6t6TeiFxZ0GoUz8Ng==)
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:594)
+	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:565)
+	at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:937)
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:346)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1967)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:640)
+	... 55 common frames omitted
+Caused by: java.io.IOException: Connection refused: connect, socket connect lapse 5 ms. 0:0:0:0:0:0:0:1 1521  30000 (1/1) true
+	at oracle.net.nt.TcpNTAdapter.establishSocket(TcpNTAdapter.java:421)
+	at oracle.net.nt.TcpNTAdapter.doLocalDNSLookupConnect(TcpNTAdapter.java:303)
+	at oracle.net.nt.TcpNTAdapter.connect(TcpNTAdapter.java:265)
+	at oracle.net.nt.ConnOption.connect(ConnOption.java:229)
+	at oracle.net.nt.ConnStrategy.executeConnOption(ConnStrategy.java:814)
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:555)
+	... 60 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:576)
+	at java.base/sun.nio.ch.Net.connect(Net.java:583)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:851)
+	at java.base/java.nio.channels.SocketChannel.open(SocketChannel.java:285)
+	at oracle.net.nt.TimeoutSocketChannel.connect(TimeoutSocketChannel.java:184)
+	at oracle.net.nt.TimeoutSocketChannel.<init>(TimeoutSocketChannel.java:158)
+	at oracle.net.nt.TcpNTAdapter.establishSocket(TcpNTAdapter.java:380)
+	... 65 common frames omitted
+2021-11-23 16:01:34,925|INFO |[restartedMain]||HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2021-11-23 16:01:35,619|INFO |[restartedMain]||HikariPool-2 - Starting...
+2021-11-23 16:01:36,678|ERROR|[restartedMain]||HikariPool-2 - Exception during pool initialization.
+java.sql.SQLRecoverableException: Erreur d'E/S: The Network Adapter could not establish the connection (CONNECTION_ID=sYfpYThBTKumGVeodAYlAA==)
+	at oracle.jdbc.driver.T4CConnection.handleLogonNetException(T4CConnection.java:870)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:675)
+	at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:1032)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:90)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:681)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:602)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:43)
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:60)
+	at org.hibernate.tool.schema.extract.internal.SequenceInformationExtractorLegacyImpl.extractMetadata(SequenceInformationExtractorLegacyImpl.java:40)
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.initializeSequences(DatabaseInformationImpl.java:65)
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.<init>(DatabaseInformationImpl.java:59)
+	at org.hibernate.tool.schema.internal.Helper.buildDatabaseInformation(Helper.java:155)
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.doValidation(AbstractSchemaValidator.java:61)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:192)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:318)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:468)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1259)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at bank.of.africa.multichannelV2.MultichannelV2Application.main(MultichannelV2Application.java:17)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: oracle.net.ns.NetException: The Network Adapter could not establish the connection (CONNECTION_ID=sYfpYThBTKumGVeodAYlAA==)
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:594)
+	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:565)
+	at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:937)
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:346)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1967)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:640)
+	... 53 common frames omitted
+Caused by: java.io.IOException: Connection refused: connect, socket connect lapse 2 ms. 0:0:0:0:0:0:0:1 1521  30000 (1/1) true
+	at oracle.net.nt.TcpNTAdapter.establishSocket(TcpNTAdapter.java:421)
+	at oracle.net.nt.TcpNTAdapter.doLocalDNSLookupConnect(TcpNTAdapter.java:303)
+	at oracle.net.nt.TcpNTAdapter.connect(TcpNTAdapter.java:265)
+	at oracle.net.nt.ConnOption.connect(ConnOption.java:229)
+	at oracle.net.nt.ConnStrategy.executeConnOption(ConnStrategy.java:814)
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:555)
+	... 58 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:576)
+	at java.base/sun.nio.ch.Net.connect(Net.java:583)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:851)
+	at java.base/java.nio.channels.SocketChannel.open(SocketChannel.java:285)
+	at oracle.net.nt.TimeoutSocketChannel.connect(TimeoutSocketChannel.java:184)
+	at oracle.net.nt.TimeoutSocketChannel.<init>(TimeoutSocketChannel.java:158)
+	at oracle.net.nt.TcpNTAdapter.establishSocket(TcpNTAdapter.java:380)
+	... 63 common frames omitted
+2021-11-23 16:01:36,703|WARN |[restartedMain]||SQL Error: 17002, SQLState: 08006
+2021-11-23 16:01:36,703|ERROR|[restartedMain]||Erreur d'E/S: The Network Adapter could not establish the connection (CONNECTION_ID=sYfpYThBTKumGVeodAYlAA==)
+2021-11-23 16:01:36,707|ERROR|[restartedMain]||Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+2021-11-23 16:01:36,709|WARN |[restartedMain]||Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+2021-11-23 16:01:36,712|INFO |[restartedMain]||Stopping service [Tomcat]
+2021-11-23 16:01:36,733|INFO |[restartedMain]||
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-11-23 16:01:36,796|ERROR|[restartedMain]||Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at bank.of.africa.multichannelV2.MultichannelV2Application.main(MultichannelV2Application.java:17)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	... 21 common frames omitted
+Caused by: org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:112)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:99)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:69)
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:60)
+	at org.hibernate.tool.schema.extract.internal.SequenceInformationExtractorLegacyImpl.extractMetadata(SequenceInformationExtractorLegacyImpl.java:40)
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.initializeSequences(DatabaseInformationImpl.java:65)
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.<init>(DatabaseInformationImpl.java:59)
+	at org.hibernate.tool.schema.internal.Helper.buildDatabaseInformation(Helper.java:155)
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.doValidation(AbstractSchemaValidator.java:61)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:192)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:318)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:468)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1259)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	... 25 common frames omitted
+Caused by: java.sql.SQLRecoverableException: Erreur d'E/S: The Network Adapter could not establish the connection (CONNECTION_ID=sYfpYThBTKumGVeodAYlAA==)
+	at oracle.jdbc.driver.T4CConnection.handleLogonNetException(T4CConnection.java:870)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:675)
+	at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:1032)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:90)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:681)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:602)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:43)
+	... 39 common frames omitted
+Caused by: oracle.net.ns.NetException: The Network Adapter could not establish the connection (CONNECTION_ID=sYfpYThBTKumGVeodAYlAA==)
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:594)
+	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:565)
+	at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:937)
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:346)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1967)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:640)
+	... 53 common frames omitted
+Caused by: java.io.IOException: Connection refused: connect, socket connect lapse 2 ms. 0:0:0:0:0:0:0:1 1521  30000 (1/1) true
+	at oracle.net.nt.TcpNTAdapter.establishSocket(TcpNTAdapter.java:421)
+	at oracle.net.nt.TcpNTAdapter.doLocalDNSLookupConnect(TcpNTAdapter.java:303)
+	at oracle.net.nt.TcpNTAdapter.connect(TcpNTAdapter.java:265)
+	at oracle.net.nt.ConnOption.connect(ConnOption.java:229)
+	at oracle.net.nt.ConnStrategy.executeConnOption(ConnStrategy.java:814)
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:555)
+	... 58 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:576)
+	at java.base/sun.nio.ch.Net.connect(Net.java:583)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:851)
+	at java.base/java.nio.channels.SocketChannel.open(SocketChannel.java:285)
+	at oracle.net.nt.TimeoutSocketChannel.connect(TimeoutSocketChannel.java:184)
+	at oracle.net.nt.TimeoutSocketChannel.<init>(TimeoutSocketChannel.java:158)
+	at oracle.net.nt.TcpNTAdapter.establishSocket(TcpNTAdapter.java:380)
+	... 63 common frames omitted
+2021-11-23 16:09:34,100|INFO |[restartedMain]||Starting MultichannelV2Application using Java 16.0.2 on DESKTOP-U6F59BC with PID 25220 (C:\java\BOA\common-geeric-V4\target\classes started by osm in C:\java\BOA\common-geeric-V4)
+2021-11-23 16:09:34,112|INFO |[restartedMain]||No active profile set, falling back to default profiles: default
+2021-11-23 16:09:34,317|INFO |[restartedMain]||The Class-Path manifest attribute in C:\Users\osm\.m2\repository\com\oracle\database\jdbc\ojdbc8\21.1.0.0\ojdbc8-21.1.0.0.jar referenced one or more files that do not exist: file:/C:/Users/osm/.m2/repository/com/oracle/database/jdbc/ojdbc8/21.1.0.0/oraclepki.jar
+2021-11-23 16:09:34,321|INFO |[restartedMain]||Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-11-23 16:09:34,324|INFO |[restartedMain]||For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-11-23 16:09:38,686|INFO |[restartedMain]||Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-23 16:09:38,692|INFO |[restartedMain]||Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2021-11-23 16:09:38,839|INFO |[restartedMain]||Spring Data JDBC - Could not safely identify store assignment for repository candidate interface bank.of.africa.multichannelV2.dao.IClientTemp. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2021-11-23 16:09:38,849|INFO |[restartedMain]||Spring Data JDBC - Could not safely identify store assignment for repository candidate interface bank.of.africa.multichannelV2.dao.ICptViewTemp. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2021-11-23 16:09:38,863|INFO |[restartedMain]||Finished Spring Data repository scanning in 144 ms. Found 0 JDBC repository interfaces.
+2021-11-23 16:09:38,891|INFO |[restartedMain]||Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-23 16:09:38,896|INFO |[restartedMain]||Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-23 16:09:39,004|INFO |[restartedMain]||Finished Spring Data repository scanning in 95 ms. Found 2 JPA repository interfaces.
+2021-11-23 16:09:42,461|INFO |[restartedMain]||Tomcat initialized with port(s): 8085 (http)
+2021-11-23 16:09:42,502|INFO |[restartedMain]||Initializing ProtocolHandler ["http-nio-8085"]
+2021-11-23 16:09:42,506|INFO |[restartedMain]||Starting service [Tomcat]
+2021-11-23 16:09:42,507|INFO |[restartedMain]||Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-11-23 16:09:45,296|INFO |[restartedMain]||Initializing Spring embedded WebApplicationContext
+2021-11-23 16:09:45,298|INFO |[restartedMain]||Root WebApplicationContext: initialization completed in 10952 ms
+2021-11-23 16:09:55,162|INFO |[restartedMain]||HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-23 16:09:55,774|INFO |[restartedMain]||HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-11-23 16:09:56,350|INFO |[restartedMain]||HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-11-23 16:09:56,727|INFO |[restartedMain]||HikariPool-1 - Starting...
+2021-11-23 16:09:59,383|INFO |[restartedMain]||HikariPool-1 - Start completed.
+2021-11-23 16:09:59,443|INFO |[restartedMain]||HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2021-11-23 16:10:05,998|ERROR|[restartedMain]||Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [cli]
+2021-11-23 16:10:06,000|WARN |[restartedMain]||Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [cli]
+2021-11-23 16:10:06,003|INFO |[restartedMain]||HikariPool-1 - Shutdown initiated...
+2021-11-23 16:10:06,171|INFO |[restartedMain]||HikariPool-1 - Shutdown completed.
+2021-11-23 16:10:06,184|INFO |[restartedMain]||Stopping service [Tomcat]
+2021-11-23 16:10:06,244|INFO |[restartedMain]||
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-11-23 16:10:06,318|ERROR|[restartedMain]||Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [cli]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at bank.of.africa.multichannelV2.MultichannelV2Application.main(MultichannelV2Application.java:17)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [cli]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	... 21 common frames omitted
+Caused by: org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [cli]
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.validateTable(AbstractSchemaValidator.java:121)
+	at org.hibernate.tool.schema.internal.GroupedSchemaValidatorImpl.validateTables(GroupedSchemaValidatorImpl.java:42)
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.performValidation(AbstractSchemaValidator.java:89)
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.doValidation(AbstractSchemaValidator.java:68)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:192)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:318)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:468)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1259)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	... 25 common frames omitted
+2021-11-23 16:18:42,302|INFO |[restartedMain]||Starting MultichannelV2Application using Java 16.0.2 on DESKTOP-U6F59BC with PID 24108 (C:\java\BOA\common-geeric-V4\target\classes started by osm in C:\java\BOA\common-geeric-V4)
+2021-11-23 16:18:42,321|INFO |[restartedMain]||No active profile set, falling back to default profiles: default
+2021-11-23 16:18:42,674|INFO |[restartedMain]||The Class-Path manifest attribute in C:\Users\osm\.m2\repository\com\oracle\database\jdbc\ojdbc8\21.1.0.0\ojdbc8-21.1.0.0.jar referenced one or more files that do not exist: file:/C:/Users/osm/.m2/repository/com/oracle/database/jdbc/ojdbc8/21.1.0.0/oraclepki.jar
+2021-11-23 16:18:42,676|INFO |[restartedMain]||Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-11-23 16:18:42,678|INFO |[restartedMain]||For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-11-23 16:18:51,846|INFO |[restartedMain]||Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-23 16:18:52,073|INFO |[restartedMain]||Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2021-11-23 16:18:52,231|INFO |[restartedMain]||Spring Data JDBC - Could not safely identify store assignment for repository candidate interface bank.of.africa.multichannelV2.dao.IClientTemp. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2021-11-23 16:18:52,250|INFO |[restartedMain]||Spring Data JDBC - Could not safely identify store assignment for repository candidate interface bank.of.africa.multichannelV2.dao.ICptViewTemp. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2021-11-23 16:18:52,253|INFO |[restartedMain]||Finished Spring Data repository scanning in 164 ms. Found 0 JDBC repository interfaces.
+2021-11-23 16:18:52,320|INFO |[restartedMain]||Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-23 16:18:52,324|INFO |[restartedMain]||Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-23 16:18:52,602|INFO |[restartedMain]||Finished Spring Data repository scanning in 244 ms. Found 2 JPA repository interfaces.
+2021-11-23 16:19:06,437|INFO |[restartedMain]||Tomcat initialized with port(s): 8085 (http)
+2021-11-23 16:19:06,514|INFO |[restartedMain]||Initializing ProtocolHandler ["http-nio-8085"]
+2021-11-23 16:19:06,520|INFO |[restartedMain]||Starting service [Tomcat]
+2021-11-23 16:19:06,522|INFO |[restartedMain]||Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-11-23 16:19:07,542|INFO |[restartedMain]||Initializing Spring embedded WebApplicationContext
+2021-11-23 16:19:07,545|INFO |[restartedMain]||Root WebApplicationContext: initialization completed in 24847 ms
+2021-11-23 16:19:29,756|INFO |[restartedMain]||HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-23 16:19:30,154|INFO |[restartedMain]||HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-11-23 16:19:31,305|INFO |[restartedMain]||HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-11-23 16:19:32,240|INFO |[restartedMain]||HikariPool-1 - Starting...
+2021-11-23 16:19:38,280|INFO |[restartedMain]||HikariPool-1 - Start completed.
+2021-11-23 16:19:38,351|INFO |[restartedMain]||HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2021-11-23 16:19:58,257|INFO |[restartedMain]||HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-23 16:19:58,287|INFO |[restartedMain]||Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-23 16:20:15,501|INFO |[restartedMain]||LiveReload server is running on port 35729
+2021-11-23 16:20:15,687|INFO |[restartedMain]||Exposing 13 endpoint(s) beneath base path '/actuator'
+2021-11-23 16:20:16,564|INFO |[restartedMain]||Starting ProtocolHandler ["http-nio-8085"]
+2021-11-23 16:20:16,727|INFO |[restartedMain]||Tomcat started on port(s): 8085 (http) with context path ''
+2021-11-23 16:20:16,857|INFO |[restartedMain]||Started MultichannelV2Application in 97.593 seconds (JVM running for 102.41)

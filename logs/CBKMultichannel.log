@@ -1,0 +1,134 @@
+2022-01-24 11:37:01,645|INFO |[main]||Starting MultichannelV2Application using Java 16.0.2 on DESKTOP-U6F59BC with PID 5412 (C:\java\BOA\common-geeric-V4\target\classes started by osm in C:\java\BOA\common-geeric-V4)
+2022-01-24 11:37:01,661|INFO |[main]||No active profile set, falling back to default profiles: default
+2022-01-24 11:37:04,051|ERROR|[main]||Application run failed
+java.lang.IllegalArgumentException: Could not find class [org.springframework.boot.autoconfigure.security.SecurityAutoConfiguration]
+	at org.springframework.util.ClassUtils.resolveClassName(ClassUtils.java:334)
+	at org.springframework.core.annotation.TypeMappedAnnotation.adapt(TypeMappedAnnotation.java:446)
+	at org.springframework.core.annotation.TypeMappedAnnotation.getValue(TypeMappedAnnotation.java:369)
+	at org.springframework.core.annotation.TypeMappedAnnotation.asMap(TypeMappedAnnotation.java:284)
+	at org.springframework.core.annotation.AbstractMergedAnnotation.asAnnotationAttributes(AbstractMergedAnnotation.java:193)
+	at org.springframework.core.type.AnnotatedTypeMetadata.getAnnotationAttributes(AnnotatedTypeMetadata.java:106)
+	at org.springframework.context.annotation.AnnotationConfigUtils.attributesFor(AnnotationConfigUtils.java:285)
+	at org.springframework.context.annotation.AnnotationBeanNameGenerator.determineBeanNameFromAnnotation(AnnotationBeanNameGenerator.java:102)
+	at org.springframework.context.annotation.AnnotationBeanNameGenerator.generateBeanName(AnnotationBeanNameGenerator.java:81)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.registerBeanDefinitionForImportedConfigurationClass(ConfigurationClassBeanDefinitionReader.java:169)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:150)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:129)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:343)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:247)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:112)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:746)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at bank.of.africa.multichannelV2.MultichannelV2Application.main(MultichannelV2Application.java:32)
+Caused by: java.lang.ClassNotFoundException: org.springframework.boot.autoconfigure.security.SecurityAutoConfiguration
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:636)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:182)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:519)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:466)
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:284)
+	at org.springframework.util.ClassUtils.resolveClassName(ClassUtils.java:324)
+	... 24 common frames omitted
+2022-01-24 11:41:54,322|INFO |[main]||Starting MultichannelV2Application using Java 16.0.2 on DESKTOP-U6F59BC with PID 4684 (C:\java\BOA\common-geeric-V4\target\classes started by osm in C:\java\BOA\common-geeric-V4)
+2022-01-24 11:41:54,345|INFO |[main]||No active profile set, falling back to default profiles: default
+2022-01-24 11:41:57,034|ERROR|[main]||Application run failed
+java.lang.IllegalArgumentException: Could not find class [org.springframework.boot.autoconfigure.security.SecurityAutoConfiguration]
+	at org.springframework.util.ClassUtils.resolveClassName(ClassUtils.java:334)
+	at org.springframework.core.annotation.TypeMappedAnnotation.adapt(TypeMappedAnnotation.java:446)
+	at org.springframework.core.annotation.TypeMappedAnnotation.getValue(TypeMappedAnnotation.java:369)
+	at org.springframework.core.annotation.TypeMappedAnnotation.asMap(TypeMappedAnnotation.java:284)
+	at org.springframework.core.annotation.AbstractMergedAnnotation.asAnnotationAttributes(AbstractMergedAnnotation.java:193)
+	at org.springframework.core.type.AnnotatedTypeMetadata.getAnnotationAttributes(AnnotatedTypeMetadata.java:106)
+	at org.springframework.context.annotation.AnnotationConfigUtils.attributesFor(AnnotationConfigUtils.java:285)
+	at org.springframework.context.annotation.AnnotationBeanNameGenerator.determineBeanNameFromAnnotation(AnnotationBeanNameGenerator.java:102)
+	at org.springframework.context.annotation.AnnotationBeanNameGenerator.generateBeanName(AnnotationBeanNameGenerator.java:81)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.registerBeanDefinitionForImportedConfigurationClass(ConfigurationClassBeanDefinitionReader.java:169)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:150)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:129)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:343)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:247)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:112)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:746)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at bank.of.africa.multichannelV2.MultichannelV2Application.main(MultichannelV2Application.java:32)
+Caused by: java.lang.ClassNotFoundException: org.springframework.boot.autoconfigure.security.SecurityAutoConfiguration
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:636)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:182)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:519)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:466)
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:284)
+	at org.springframework.util.ClassUtils.resolveClassName(ClassUtils.java:324)
+	... 24 common frames omitted
+2022-01-24 14:36:47,147|INFO |[main]||Starting MultichannelV2Application using Java 16.0.2 on DESKTOP-U6F59BC with PID 16676 (C:\java\BOA\common-geeric-V4\target\classes started by osm in C:\java\BOA\common-geeric-V4)
+2022-01-24 14:36:47,161|INFO |[main]||No active profile set, falling back to default profiles: default
+2022-01-24 14:36:58,275|INFO |[main]||Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-24 14:36:58,324|INFO |[main]||Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-01-24 14:36:58,580|INFO |[main]||Spring Data JDBC - Could not safely identify store assignment for repository candidate interface bank.of.africa.multichannelV2.dao.IClientTemp. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-01-24 14:36:58,586|INFO |[main]||Spring Data JDBC - Could not safely identify store assignment for repository candidate interface bank.of.africa.multichannelV2.dao.ICurrency. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-01-24 14:36:58,600|INFO |[main]||Finished Spring Data repository scanning in 259 ms. Found 0 JDBC repository interfaces.
+2022-01-24 14:36:58,715|INFO |[main]||Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-24 14:36:58,741|INFO |[main]||Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-24 14:36:58,922|INFO |[main]||Finished Spring Data repository scanning in 165 ms. Found 2 JPA repository interfaces.
+2022-01-24 14:37:05,924|INFO |[main]||Tomcat initialized with port(s): 8085 (http)
+2022-01-24 14:37:05,952|INFO |[main]||Initializing ProtocolHandler ["http-nio-8085"]
+2022-01-24 14:37:05,953|INFO |[main]||Starting service [Tomcat]
+2022-01-24 14:37:05,954|INFO |[main]||Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-01-24 14:37:06,247|INFO |[main]||Initializing Spring embedded WebApplicationContext
+2022-01-24 14:37:06,247|INFO |[main]||Root WebApplicationContext: initialization completed in 18072 ms
+2022-01-24 14:37:08,085|INFO |[main]||HikariPool-1 - Starting...
+2022-01-24 14:37:10,155|INFO |[main]||HikariPool-1 - Start completed.
+2022-01-24 14:37:10,907|INFO |[main]||HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-24 14:37:11,537|INFO |[main]||HHH000412: Hibernate ORM core version 5.4.32.Final
+2022-01-24 14:37:12,475|INFO |[main]||HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-24 14:37:13,332|INFO |[main]||HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-24 14:37:17,817|INFO |[main]||HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-24 14:37:17,847|INFO |[main]||Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-24 14:37:20,513|WARN |[main]||spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-01-24 14:37:28,896|INFO |[main]||Exposing 13 endpoint(s) beneath base path '/actuator'
+2022-01-24 14:37:29,033|INFO |[main]||Starting ProtocolHandler ["http-nio-8085"]
+2022-01-24 14:37:29,159|INFO |[main]||Tomcat started on port(s): 8085 (http) with context path ''
+2022-01-24 14:37:29,195|INFO |[main]||Started MultichannelV2Application in 46.47 seconds (JVM running for 56.172)
+2022-01-24 14:40:00,006|INFO |[http-nio-8085-exec-1]||Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x020x000x010x000x010xfc0x030x030x91@0x10K0xfac0xda0x970xf10x910xfe0xcf+0x92@n0xf30xca20x018>0x900x8e0xc50xf3s0xf30xd30xf30x98Y ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:269)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+2022-01-24 14:40:00,010|INFO |[http-nio-8085-exec-2]||Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x020x000x010x000x010xfc0x030x0330xac/0xdc0xd40xc4`o0xb50x1aN0x880x040xcd0xca0xec-_0xf30xb9d0xca0xe30xdd0xba0xfc0xf0*0x130xd80x14> ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:269)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+2022-01-24 14:40:09,692|INFO |[http-nio-8085-exec-5]||Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-01-24 14:40:09,693|INFO |[http-nio-8085-exec-5]||Initializing Servlet 'dispatcherServlet'
+2022-01-24 14:40:09,701|INFO |[http-nio-8085-exec-5]||Completed initialization in 8 ms

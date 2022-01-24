@@ -1,0 +1,31 @@
+2021-12-01 16:19:48,143|INFO |[main]||Starting MultichannelV2Application using Java 16.0.2 on DESKTOP-U6F59BC with PID 11920 (C:\java\BOA\common-geeric-V4\target\classes started by osm in C:\java\BOA\common-geeric-V4)
+2021-12-01 16:19:48,156|INFO |[main]||No active profile set, falling back to default profiles: default
+2021-12-01 16:19:58,320|INFO |[main]||Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-12-01 16:19:58,330|INFO |[main]||Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2021-12-01 16:19:58,619|INFO |[main]||Spring Data JDBC - Could not safely identify store assignment for repository candidate interface bank.of.africa.multichannelV2.dao.IClientTemp. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2021-12-01 16:19:58,634|INFO |[main]||Spring Data JDBC - Could not safely identify store assignment for repository candidate interface bank.of.africa.multichannelV2.dao.ICurrency. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2021-12-01 16:19:58,638|INFO |[main]||Finished Spring Data repository scanning in 270 ms. Found 0 JDBC repository interfaces.
+2021-12-01 16:19:58,670|INFO |[main]||Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-12-01 16:19:58,676|INFO |[main]||Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-01 16:19:58,803|INFO |[main]||Finished Spring Data repository scanning in 102 ms. Found 2 JPA repository interfaces.
+2021-12-01 16:20:04,527|INFO |[main]||Tomcat initialized with port(s): 8085 (http)
+2021-12-01 16:20:04,851|INFO |[main]||Initializing ProtocolHandler ["http-nio-8085"]
+2021-12-01 16:20:04,853|INFO |[main]||Starting service [Tomcat]
+2021-12-01 16:20:04,854|INFO |[main]||Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-12-01 16:20:06,228|INFO |[main]||Initializing Spring embedded WebApplicationContext
+2021-12-01 16:20:06,229|INFO |[main]||Root WebApplicationContext: initialization completed in 17754 ms
+2021-12-01 16:20:11,928|INFO |[main]||HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-01 16:20:12,083|INFO |[main]||HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-12-01 16:20:12,481|INFO |[main]||HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-01 16:20:12,951|INFO |[main]||HikariPool-1 - Starting...
+2021-12-01 16:20:13,667|INFO |[main]||HikariPool-1 - Start completed.
+2021-12-01 16:20:13,704|INFO |[main]||HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2021-12-01 16:20:18,339|INFO |[main]||HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-01 16:20:18,365|INFO |[main]||Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-01 16:20:27,951|INFO |[main]||Exposing 13 endpoint(s) beneath base path '/actuator'
+2021-12-01 16:20:28,311|INFO |[main]||Starting ProtocolHandler ["http-nio-8085"]
+2021-12-01 16:20:28,573|INFO |[main]||Tomcat started on port(s): 8085 (http) with context path ''
+2021-12-01 16:20:28,623|INFO |[main]||Started MultichannelV2Application in 44.366 seconds (JVM running for 52.132)
+2021-12-01 16:21:37,578|INFO |[http-nio-8085-exec-1]||Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-01 16:21:37,579|INFO |[http-nio-8085-exec-1]||Initializing Servlet 'dispatcherServlet'
+2021-12-01 16:21:37,583|INFO |[http-nio-8085-exec-1]||Completed initialization in 3 ms
